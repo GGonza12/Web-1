@@ -1,0 +1,370 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Karantina', cursive;
+}
+
+body {
+    background-color: whitesmoke;
+    background-size: cover;
+}
+
+/* index  */
+
+.logo {
+    height: 90px;
+    width: 90px;
+    border-radius: 10px;
+    
+}
+
+header {
+    grid-area: header;  
+}
+
+.navegador {
+    grid-area: navegador;
+}
+
+.redes {
+    height: 30px;
+    width: 30px;
+    border-radius: 10px;
+}
+
+.estilo-agregar {
+    background-color: rgb(95, 255, 47);
+    border-radius: 5px;
+}
+
+.articulo {
+    grid-area: articulo;
+
+}
+
+.gif {
+    width: 100%;
+    grid-area: gif;
+}
+.imagen-capcha {
+    width: 80px;
+    height: 80px;
+}
+
+.respuesta-capcha {
+    background-color: rgb(253, 253, 253);
+    text-align: center;
+    width: 100px;
+    }
+
+.borde-negro{
+    border: solid 1px black;
+}
+
+/* tienda */
+
+.juego {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Titulo del juego */
+
+.titulo-juego {
+    margin-bottom: 5px;
+}
+
+/* Contenedor principal de cada juego */
+
+.contenedor-tienda-juego {
+    display: flex;
+    flex-direction: column;
+    border: solid rgb(12, 12, 12) 5px;
+    background-color: rgb(248, 242, 242);
+    
+}
+
+/* Contenedor de los detalles */
+
+.informacion-de-juego {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* Fija el tamaño de todas las imagenes de los juegos y separa un poco de la informacion de la derecha */
+
+.imagen-de-juego {
+    height: 253px;
+    width: 100%;
+    margin-right: 5px;
+    border: solid;
+}
+
+/* imagenes demostrativas con un tamaño fijo y un efecto de transicion */
+
+.imagenes-demostrativas {
+    width: 150px;
+    height: 90px;
+    margin-right: 10px;
+    border: solid black 2px;
+    transition: transform 0.5s;
+
+}
+/* al pasar el mouse aumente la escala del a imagen */
+
+.imagenes-demostrativas:hover {
+    transform: scale(1,2);
+}
+
+/* contendor de la lista genero y el boton carrito */
+
+.genero-carrito {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+
+/* sacar el estilo de la lista */
+
+.genero ul {
+    list-style: none;
+}
+
+/* contendor de añadir al carrito */
+
+.carrito {
+    border: solid rgb(8, 8, 8);
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(1, 129, 1);
+    margin-right: 7px;
+    width: 134px;
+    height: 50px;
+    justify-content: flex-end;
+}
+
+ /* un scroll horizontal de imagenes demostrativas del juego  */
+
+.scroll {
+    margin: 4px, 4px;
+    padding: 4px;
+    background-color: white;
+    overflow: auto;
+    white-space: nowrap;
+    width: 100%;
+    height: 110px;
+    border: solid;
+}
+
+/* Fin Tienda celular  */
+
+.informacion {
+    grid-area: informacion;
+    
+}
+
+
+.tabla{
+    border: solid black 1px;
+    width:100%;
+    grid-area: premios;
+    text-align: center;
+}
+
+.datos-de-tabla{
+    grid-area: datos;
+}
+
+.seccion {
+    grid-area: seccion;
+}
+
+footer {
+    grid-area: footer;
+}
+
+.agregar-tabla {
+    grid-area: tabla-ad;
+}
+
+table,th,tr,td{
+    border: solid 2px rgb(55, 17, 194);
+    background-color: rgb(159, 232, 235);
+}
+.oculto {
+    display: none;
+}
+.visible {
+    border: solid black 1px;
+    display: grid;
+    grid-area: visible;
+}
+.filtrado {
+    border: solid black  1px;
+    grid-area: filtrado;
+}
+.contenedor {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+    "header header"
+    "navegador navegador"
+    "gif gif"
+    "articulo articulo"
+    "seccion seccion"
+    "informacion informacion"
+    "filtrado filtrado"
+    "premios premios"
+    "tabla-ad tabla-ad"
+    "visible visible"
+    "footer footer"
+    ;
+}
+
+/* Comunidad */
+
+.imagenes-usuarios{
+    width: 150px;
+    height: 150px;
+    padding-bottom: 5px;
+}
+
+.comunidad-caja{
+    display: flex;
+    justify-content: row;
+    border: solid 2px rgb(19, 18, 18);
+    width: 100%;
+    height: 100%;
+    background-color: rgb(159, 233, 47);
+    justify-content: center;
+    
+}
+
+.caja-lista{
+    width: 100%;
+    height: 100%;
+}
+
+/* Fin Comunidad */
+
+@media only screen and (min-width: 1200px)  {
+
+    .contenedor {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+        grid-template-areas:
+        "header header"
+        "navegador navegador"
+        "gif articulo"
+        "gif seccion"
+        "informacion informacion"
+        "filtrado filtrado"
+        "premios premios"
+        "tabla-ad tabla-ad"
+        "visible visible"
+        "footer footer"
+        ;
+    }
+
+    .redes {
+        height: 30px;
+        width: 30px;
+        border-radius: 10px;
+    }
+
+    .agregar-tabla {
+        display: grid;
+        justify-content: center;
+    }
+
+    .imagen-de-juego {
+        height: 253px;
+        width: 450px;
+        margin-right: 5px;
+        border: solid;
+    }
+
+    .gif {
+        width: 100%;
+        height: 500px;
+    }
+
+     /* un scroll horizontal de imagenes demostrativas del juego  */
+    .juego {
+    display: flex;
+    flex-direction: row;
+    }
+
+    .imagenes-demostrativas {
+    width: 200px;
+    height: 120px;
+    }
+
+    .scroll {
+    margin: 4px, 4px;
+    padding: 4px;
+    background-color: white;
+    overflow: auto;
+    white-space: nowrap;
+    width: 100%;
+    height: 145px;
+    }
+
+
+    /* final de la tienda */
+
+    /* comunidad. */
+
+    /*registracion. */
+
+    .registracion {
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    }
+
+    /* Contenedor de comunidad. */
+
+    .comunidad-caja {
+    justify-content: space-around;
+    border: solid black 5px;
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(231, 117, 50);
+    }
+    /* imagenes que suben usuarios. */
+
+    .imagenes-usuarios {
+    width: 350px;
+    height: 350px;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    }
+
+    /* Final de comunidad */
+
+    .capcha {
+    background: rgba(245, 245, 245, 0.973);
+    text-align: center;
+    width: 300px;
+    }
+    .caja-capcha {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    }
+
+    .imagen-capcha {
+    width: 180px;
+    height: 180px;
+    }
+
+
+}
+

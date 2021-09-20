@@ -1,0 +1,10 @@
+.cajita {
+    border: 10px solid red;
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    position: absolute;
+}
+body{
+    height: 100vh;
+  }

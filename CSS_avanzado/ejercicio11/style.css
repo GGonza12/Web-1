@@ -1,0 +1,10 @@
+div {
+    width: 100px;
+    height: 50px;
+    border: 10px;
+    padding: 10px;
+    margin: 10px;
+    background-image:linear-gradient(90deg,blue 33%, white 33%, white 66.66%, red 66.66%);
+    /*que el white va del 0 al 33% y que el white va del 33.33% al 66.%  y el red desde el 66*/ 
+    
+}

@@ -1,0 +1,9 @@
+.formulario {
+    display: flex;
+    flex-direction: column;
+}
+table tr,th,td {
+    border: solid black;
+    background-color: aquamarine;
+    border-radius: 20px;
+}

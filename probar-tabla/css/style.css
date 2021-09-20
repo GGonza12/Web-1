@@ -1,0 +1,19 @@
+.tabla-premios {
+    border: solid black 1px;
+}
+td  {
+    border: solid black 1px;
+}
+tr {
+    border: solid black 1px;
+}
+th {
+    border: solid black 1px;
+}
+
+.oculto {
+    display: none;
+}
+.visible {
+    display: grid;
+}

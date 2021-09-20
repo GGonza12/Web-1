@@ -1,0 +1,13 @@
+.inscribirse {
+    display: flex;
+    flex-direction: column;
+    border: solid black;
+    background-color: lightseagreen;
+}
+input, select {
+    background-color: lightgrey;
+
+}
+thead {
+    background-color: green;
+}

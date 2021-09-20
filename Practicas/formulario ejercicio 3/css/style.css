@@ -1,0 +1,4 @@
+.caja {
+    display: flex;
+    flex-direction: column;
+}

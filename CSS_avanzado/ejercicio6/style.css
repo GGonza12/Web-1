@@ -1,0 +1,16 @@
+.container .child1 {
+    background-color: inherit;
+  }
+  .container {
+    background-color: black;
+    color: white;
+  }
+  #middle {
+    color: blue;
+  }
+  .child1 {
+    background-color: red;
+    color: yellow;
+  }
+
+  

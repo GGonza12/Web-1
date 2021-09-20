@@ -1,0 +1,8 @@
+.caja {
+    display: flex;
+    flex-direction: column;
+    border: solid black;
+}
+button, input, select {
+    border: solid red;
+}

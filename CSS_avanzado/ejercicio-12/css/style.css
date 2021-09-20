@@ -1,0 +1,42 @@
+
+.cajita {
+        display: grid;
+        grid-template-areas: 
+        "A"
+        "B"
+        "C"
+        "D";
+        }
+.caja {
+    border: 1px solid black;
+    text-align: center;
+        }
+.a {grid-area: A;}
+.b {grid-area: B;}
+.c {grid-area: C;}
+.d {grid-area: D;}
+
+
+@media only screen and (min-width: 768px) {
+    .cajita {
+    display: grid;
+    
+    grid-template-areas: 
+    "A A D D"
+    "B C D D";
+    }
+
+}
+@media only screen and (min-width: 1200px)  {
+    .cajita {
+        display: grid;
+        grid-template-areas: 
+        "A B C"
+        "D D D";
+        }
+        
+
+}
+
+
+

@@ -1,0 +1,11 @@
+.ocultar-modificar-datos{
+   visibility: hidden;
+}
+.mostrar{
+    visibility: visible;
+}
+.contenedor {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}

@@ -1,0 +1,42 @@
+.container{
+    display: grid;
+    grid-template-rows: 1fr 3fr 1fr 1fr 1fr;
+    grid-template-areas: 
+    "header"
+    "interior"
+    "nav"
+    "aside"
+    "footer"
+}
+
+header, article, nav, aside, footer{
+
+    border: 1px solid black;
+}
+
+header{grid-area: header;}
+
+nav{grid-area: nav;}
+
+.articulo{grid-area: interior;}
+
+aside{grid-area: aside;}
+
+footer{grid-area: footer;}
+
+@media only screen and (min-width: 1200px){
+
+    .container{
+        display: grid;
+        grid-template-columns: 2fr 2fr 2fr 2fr 2fr;
+        grid-template-rows: 1fr 5fr  1fr;
+        grid-template-areas: 
+        "header header header header header"
+        "nav interior interior interior aside"
+        "footer footer footer footer footer"
+        ;
+    }
+
+
+
+}

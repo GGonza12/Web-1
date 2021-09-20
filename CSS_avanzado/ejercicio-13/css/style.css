@@ -1,0 +1,54 @@
+.container {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    grid-template-areas:
+    "titulo titulo"
+    "B B"
+    "C D"
+    "E E";
+}
+
+header{
+    grid-area: titulo;
+    background-color: gray;
+    border: 1px solid black;
+}
+
+.caja {
+    border: 1px solid black;
+    text-align: center;
+}
+
+.a{grid-area: A;
+display: none;}
+
+.b {grid-area: B;}
+
+.c {grid-area: C;}
+
+.d {grid-area: D;}
+
+.e {grid-area: E;}
+
+@media only screen and (min-width: 1200px){
+
+    .a{grid-area: A;
+    display: block;}
+
+    .container{
+        display: grid;
+        grid-template-areas: 
+        "titulo titulo titulo titulo titulo titulo"
+        "A A B B B B"
+        "A A B B B B"
+        "C C D D E E"
+        ;
+    }
+
+
+
+
+
+
+}

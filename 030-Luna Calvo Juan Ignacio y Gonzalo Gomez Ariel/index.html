@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="Juegos,Videojuegos,venta,videos,grupos,foros,hardware,software">
+    <title>AstroGames</title>
+    
+    <link rel="shortcut icon" href="images/home/favicon.gif" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+        <link rel="stylesheet" href="css/estilo-astrogames.css">
+  
+</head>
+
+<body>
+    <div class="contenedor">
+        <header>
+            <nav class="navbar navbar-light bg-light header">
+                <div class="container-fluid">
+
+                    <img src="images/home/logo.png" alt="" width="30" height="24"
+                        class="d-inline-block align-text-top logo">
+                    </h1>AstroGames</h1>
+                </div>
+            </nav>
+        </header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light navegador">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">Navegador</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="tienda.html">Tienda</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="comunidad.html">Comunidad</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="perfil.html">Perfil</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="carrito.html">Carrito</a>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <img src="images/home/seccion.gif" alt="seccion" class="gif">
+        <section class="articulo borde-negro">
+            <div>
+                <div class="videojuego-en-progreso">
+                    <h2>VideoJuego Retro de los programadores de la Pagina!</h2>
+                    <p> Este VideoJuego programado por Luna y Gomez, quiere hacer honor a los juegos de la epoca dorada
+                        de las aventuraas graficas de los 90s!, he aqui una muestra del avance del juego</p>
+                </div>
+            </div>
+        </section>
+        <section class="seccion borde-negro">
+            <div class="lista-de-juegos">
+                <h4>Juegos Top del mes:</h4>
+                <ol>
+                    <a href="https://www.youtube.com/watch?v=FKtaOY9lMvM">
+                        <li>Days gone</li>
+                    </a>
+                    <a href="https://www.youtube.com/watch?v=gjjJbd-pa8g">
+                        <li>Nier replicant ver 1.2247</li>
+                    </a>
+                    <a href="https://www.youtube.com/watch?v=F9b-_jCCBhg">
+                        <li>Oddworld soulstorm</li>
+                    </a>
+                    <a href="https://www.youtube.com/watch?v=e0dNAq3f5pU">
+                        <li>Breathedge</li>
+                    </a>
+                    <a href="https://www.youtube.com/watch?v=btFclZUXpzA">
+                        <li>Resident Village</li>
+                    </a>
+                </ol>
+            </div>
+        </section>
+        <article class="informacion borde-negro">
+                <h2>Sony y Microsoft registraron ingresos récord en sus áreas de videojuegos durante el último año</h2>
+                <p> El 44 por ciento de los desarrolladores de videojuegos ha asegurado que los títulos en los que
+                    trabajan han sufrido retrasos debido a la llegada de la pandemia de Covid-19, a pesar de que casi la
+                    mitad de estudios (47%) creció en plantilla
+                    durante esta coyuntura. Para Sony el período 2020/2021 representó, hasta ahora, su mejor año para el
+                    área de Game & Network services y registraron ingresos por 25 mil millones de dólares y ganancias
+                    por 3.2 mil millones. Para alcanzar
+                    ese récord Sony se apoyó en dos factores que se combinaron. Por un lado la llegada al mercado de la
+                    PlayStation 5, que desde su lanzamiento vendió 7.8 millones de unidades. A pesar de los problemas
+                    que se produjeron en el acceso a componentes
+                    clave y el stock, solo durante los primeros tres meses del 2021 Sony vendió 3.3 mil millones de la
+                    última generación de consolas y el acumulado superó al que registró en el mismo período la
+                    PlayStation 4 (7.6 millones).</p>
+        </article>
+        <form class="filtrado">
+        <input type="text" placeholder="Busqueda" id="filtrar">
+        </form>
+            <table class="tabla">
+                <thead>
+                    <tr>
+                        <th>Juego</th>
+                        <th>Genero</th>
+                        <th>Año</th>
+                        <th>Premio</th>
+                        <th>Modificar</th>
+                        <th>Eliminar</th>
+                    </tr>
+                </thead>
+    
+                <tbody id="table-datos">
+                </tbody>
+    
+                <tfoot>
+    
+                    <td colspan="6">The Game Awards(GOTY)</td>
+    
+                </tfoot>
+    
+            </table>
+            <form action="datos-table" class="agregar-tabla borde-negro">
+                <h4>Ingrese titulo del juego</h4>
+                <input type="text" placeholder="Ingrese juego" name="Juego" id="dato_juego">
+                <h4>Ingrese genero del juego</h4>
+                <input type="text" placeholder="Ingrese genero" name="Genero" id="dato_genero">
+                <h4>Ingrese año del juego</h4>
+                <input type="text" placeholder="Ingrese año" name="Año" id="dato_ano">
+                <h4>Ingrese premio del juego</h4>
+                <input type="text" placeholder="Ingrese premio" name="Premio" id="dato_premio">
+                <input type="button" value="Agregar" id="agregarunitem">
+                <input type="button" value="Agregar 3" id="agregartresitem">
+                
+            </form>
+            <div class="oculto">
+              <form>
+              <input type="text" placeholder="Modificar juego" name="juego" id="mod_juego">
+              <input type="text" placeholder="Modificar genero" name="genero" id="mod_genero">
+              <input type="text" placeholder="Modificar año" name="año" id="mod_año">
+              <input type="text" placeholder="Modificar premio" name="premio" id="mod_premio">
+              </form>
+              <div class="crear-boton-mod"></div>
+          </div>
+            
+        
+        <!-- Footer -->
+<footer class="page-footer font-small mdb-color lighten-3 pt-4 borde-negro">
+
+    <!-- Footer Links -->
+    <div class="container text-center text-md-left">
+  
+      <!-- Grid row -->
+      <div class="row">
+  
+        <!-- Grid column -->
+        <div class="col-md-4 col-lg-3 mr-auto my-md-4 my-0 mt-4 mb-1">
+  
+          <!-- Content -->
+          <h5 class="font-weight-bold text-uppercase mb-4">¿Quienes somos?</h5>
+          <p>Somos una pagina de informacion venta y de videojuegos. A su vez también tenemos una comunidad muy activida en la que cada uno de los usuarios hace su contribucion en parches, mods o simples publicaciones de diversos temas sobre ellos.</p>
+  
+        </div>
+        <!-- Grid column -->
+  
+        <hr class="clearfix w-100 d-md-none">
+  
+        <!-- Grid column -->
+        <div class="col-md-2 col-lg-2 mx-auto my-md-4 my-0 mt-4 mb-1">
+  
+          <!-- Links -->
+          <h5 class="font-weight-bold text-uppercase mb-4">¿Que hacemos aca?</h5>
+  
+          <ul class="list-unstyled">
+            <li>
+              <p>
+                Informacion de videojuegos
+              </p>
+            </li>
+            <li>
+              <p>
+                Comunidad
+              </p>
+            </li>
+            <li>
+              <p>
+                Ventas
+              </p>
+            </li>
+            <li>
+              <p>
+                Informacion de Hardware
+              </p>
+            </li>
+          </ul>
+  
+        </div>
+        <!-- Grid column -->
+  
+        <hr class="clearfix w-100 d-md-none">
+  
+        <!-- Grid column -->
+        <div class="col-md-4 col-lg-3 mx-auto my-md-4 my-0 mt-4 mb-1">
+  
+          <!-- Contact details -->
+          <h5 class="font-weight-bold text-uppercase mb-4">¿Queres contactarnos?</h5>
+  
+          <ul class="list-unstyled">
+            <li>
+              <p>
+                <i class="fas fa-home mr-3"></i> Argentina, tandil , ARS</p>
+            </li>
+            <li>
+              <p>
+                <i class="fas fa-envelope mr-3"></i> AstroGames@gmail.com</p>
+            </li>
+            <li>
+              <p>
+                <i class="fas fa-phone mr-3"></i> + 01 777 7777 77</p>
+            </li>
+            <li>
+              <p>
+                <i class="fas fa-print mr-3"></i> + 01 999 222 00</p>
+            </li>
+          </ul>
+  
+        </div>
+        <!-- Grid column -->
+  
+        <hr class="clearfix w-100 d-md-none">
+  
+        <!-- Grid column -->
+        <div class="col-md-2 col-lg-2 text-center mx-auto my-4">
+  
+           <!-- Social -->
+           <h5 class="font-weight-bold text-uppercase mb-4">Follow Us</h5>
+  
+           <!-- Facebook -->
+             <img src="images/home/facebook.png" alt="Facebook" class="redes">
+           <!-- Twitter -->
+             <img src="images/home/twitter.png" alt="twitter" class="redes">
+           <!-- Instagram -->
+            <img src="images/home/instagram.png" alt="instagram" class="redes">
+           <!-- Youtube -->
+             <img src="images/home/youtube.png" alt="youtube" class="redes">
+  
+        </div>
+        <!-- Grid column -->
+  
+      </div>
+      <!-- Grid row -->
+  
+    </div>
+    <!-- Footer Links -->
+  
+    <!-- Copyright -->
+    <div class="footer-copyright text-center py-3">© 2021 Copyright:
+      
+    </div>
+    <!-- Copyright -->
+  
+  </footer>
+  <!-- Footer -->
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+        crossorigin="anonymous"></script>
+        <script type="text/javascript" src="js/tabladinamica.js"></script>
+    
+</body>
+
+</html>

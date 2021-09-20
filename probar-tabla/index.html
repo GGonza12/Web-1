@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    
+</head>
+<body>
+    <form>
+        <input type="text" name="filtro" id="filtrar" placeholder="Que buscas?">
+    </form>
+
+    <table class="tabla-premios">
+        <thead>
+            <tr>
+                <th>Juego</th>
+                <th>Genero</th>
+                <th>Año</th>
+                <th>Premio</th>
+                <th>Modificar</th>
+                <th>Eliminar</th>
+            </tr>
+        </thead>
+
+        <tbody id="table-datos">
+
+        </tbody>
+
+        <tfoot>
+
+            <td colspan="6">The Game Awards(GOTY)</td>
+
+        </tfoot>
+
+    </table>
+    <form>
+        <input type="button" value="cargar tabla" id="cargar">
+        <input type="text" placeholder="Ingrese juego" name="juego" id="dato_juego">
+        <input type="text" placeholder="Ingrese genero" name="genero" id="dato_genero">
+        <input type="text" placeholder="Ingrese año" name="año" id="dato_ano">
+        <input type="text" placeholder="Ingrese premio" name="premio" id="dato_premio">
+        <input type="button" value="Agregar a la tabla" id="agregar">
+        <input type="button" value="Agregar 3 a la tabla" id="agregartres">
+
+    </form>
+    <div class="oculto">
+        <form>
+        <input type="text" placeholder="Modificar juego" name="juego" id="mod_juego">
+        <input type="text" placeholder="Modificar genero" name="genero" id="mod_genero">
+        <input type="text" placeholder="Modificar año" name="año" id="mod_año">
+        <input type="text" placeholder="Modificar premio" name="premio" id="mod_premio">
+        </form>
+        <div class="crear-boton-mod"></div>
+    </div>
+    
+
+    <script type="text/javascript" src="js/javascript.js"></script>
+</body>
+</html>

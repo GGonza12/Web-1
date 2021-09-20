@@ -1,0 +1,9 @@
+.estilodiv {
+    background: aqua;
+    border: solid 10px;
+}
+
+.cambiarestilo {
+    background: red;
+    border: solid 3px;
+}

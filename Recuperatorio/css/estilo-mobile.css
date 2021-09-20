@@ -1,0 +1,63 @@
+.contenedor{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+    "primeroa "  
+    "segundob "
+    "cuartod" 
+    "quintoe"
+    
+    ;
+}
+.primero {
+    grid-area: primeroa;
+}
+.segundo {
+    grid-area: segundob;
+}
+
+.tercero {
+    
+    display: none;
+}
+
+.cuarto {
+    grid-area: cuartod;
+}
+
+.quinto {
+    grid-area: quintoe;
+}
+
+
+.a,.b,.c,.d,.e,.f{
+    border: solid 1px black;
+    text-align: center;
+}
+
+
+
+@media only screen and (min-width: 1200px)  {
+    .tercero {
+        display:grid ;
+        grid-area: terceroc;
+    }
+
+    .contenedor {
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: auto;
+        grid-template-areas:
+        "primeroa primeroa"  
+        "segundob terceroc"
+        "segundob cuartod" 
+        "quintoe quintoe"
+        
+        ;
+    }
+
+}
+.menu {
+    color: red;
+}
